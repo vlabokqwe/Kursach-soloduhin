@@ -49,15 +49,18 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             Margin="20,0,20,0">
-                    <Button Content="Готовые ПК"
+                    <Button x:Name="ReadyPcButton"
+                            Content="Готовые ПК"
                             Margin="5,0"
                             Padding="16,4"
                             Background="Transparent"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontSize="14"
-                            Cursor="Hand" />
-                    <Button Content="Игровые"
+                            Cursor="Hand"
+                            Click="ReadyPcButton_Click" />
+                    <Button x:Name="GamingButton"
+                            Content="Игровые"
                             Margin="5,0"
                             Padding="16,4"
                             Background="Transparent"
@@ -65,23 +68,28 @@
                             BorderBrush="Transparent"
                             FontSize="14"
                             FontWeight="Bold"
-                            Cursor="Hand" />
-                    <Button Content="Рабочие станции"
+                            Cursor="Hand"
+                            Click="GamingButton_Click" />
+                    <Button x:Name="WorkstationButton"
+                            Content="Рабочие станции"
                             Margin="5,0"
                             Padding="16,4"
                             Background="Transparent"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontSize="14"
-                            Cursor="Hand" />
-                    <Button Content="Аксессуары"
+                            Cursor="Hand"
+                            Click="WorkstationButton_Click" />
+                    <Button x:Name="AccessoriesButton"
+                            Content="Аксессуары"
                             Margin="5,0"
                             Padding="16,4"
                             Background="Transparent"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontSize="14"
-                            Cursor="Hand" />
+                            Cursor="Hand"
+                            Click="AccessoriesButton_Click" />
                 </StackPanel>
 
                 <!-- Auth buttons -->
@@ -111,186 +119,11 @@
             </Grid>
         </Border>
 
-        <!-- MAIN CONTENT WITH SCROLLBAR -->
-        <ScrollViewer Grid.Row="1"
-                      VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      Background="#101018">
-            <StackPanel Margin="20,15,20,15">
-
-                <!-- HERO BANNER -->
-                <Border CornerRadius="10"
-                        Padding="20"
-                        Background="#181830">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-
-                        <!-- Text part -->
-                        <StackPanel VerticalAlignment="Center" Margin="0,0,20,0">
-                            <TextBlock Text="Готовые игровые ПК"
-                                       Foreground="White"
-                                       FontSize="26"
-                                       FontWeight="Bold"
-                                       Margin="0,0,0,6" />
-                            <TextBlock Text="Максимальная производительность для игр и работы — выберите свой ПК из готовых конфигураций."
-                                       Foreground="#CCCCCC"
-                                       FontSize="14"
-                                       TextWrapping="Wrap"
-                                       Margin="0,0,0,12" />
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Подобрать ПК"
-                                        Padding="18,6"
-                                        Margin="0,0,8,0"
-                                        Background="#FF4B1F"
-                                        Foreground="White"
-                                        BorderBrush="Transparent"
-                                        Cursor="Hand" />
-                                <Button Content="Смотреть все сборки"
-                                        Padding="16,6"
-                                        Background="Transparent"
-                                        BorderBrush="#FF4B1F"
-                                        Foreground="#FF4B1F"
-                                        Cursor="Hand" />
-                            </StackPanel>
-                        </StackPanel>
-
-                        <!-- Image placeholder / banner box -->
-                        <Border Grid.Column="1"
-                                CornerRadius="8"
-                                Background="#202040"
-                                HorizontalAlignment="Stretch"
-                                VerticalAlignment="Stretch">
-                            <Grid>
-                                <TextBlock Text="ФОТО ПК"
-                                           Foreground="#666"
-                                           FontSize="16"
-                                           FontWeight="Bold"
-                                           HorizontalAlignment="Center"
-                                           VerticalAlignment="Center" />
-                            </Grid>
-                        </Border>
-                    </Grid>
-                </Border>
-
-                <!-- SECTION TITLE -->
-                <TextBlock Text="Популярные сборки"
-                           Margin="0,20,0,10"
-                           Foreground="White"
-                           FontSize="20"
-                           FontWeight="SemiBold" />
-
-                <!-- PRODUCT CARDS -->
-                <UniformGrid Columns="3" Margin="0,0,0,10">
-                    <!-- Card 1 -->
-                    <Border Margin="5"
-                            Padding="10"
-                            CornerRadius="8"
-                            Background="#151528"
-                            BorderBrush="#222"
-                            BorderThickness="1">
-                        <StackPanel>
-                            <Rectangle Height="100"
-                                       RadiusX="6"
-                                       RadiusY="6"
-                                       Fill="#202040" />
-                            <TextBlock Text="HYPERPC GAMER"
-                                       Margin="0,10,0,2"
-                                       Foreground="White"
-                                       FontWeight="Bold"
-                                       FontSize="14" />
-                            <TextBlock Text="RTX 4060 • Ryzen 5 • 16 ГБ"
-                                       Foreground="#AAAAAA"
-                                       FontSize="12"
-                                       TextWrapping="Wrap" />
-                            <TextBlock Text="от 99 990 ₽"
-                                       Margin="0,6,0,8"
-                                       Foreground="#FF4B1F"
-                                       FontSize="14"
-                                       FontWeight="Bold" />
-                            <Button Content="Купить"
-                                    Padding="10,4"
-                                    Background="#FF4B1F"
-                                    Foreground="White"
-                                    BorderBrush="Transparent"
-                                    Cursor="Hand" />
-                        </StackPanel>
-                    </Border>
-
-                    <!-- Card 2 -->
-                    <Border Margin="5"
-                            Padding="10"
-                            CornerRadius="8"
-                            Background="#151528"
-                            BorderBrush="#222"
-                            BorderThickness="1">
-                        <StackPanel>
-                            <Rectangle Height="100"
-                                       RadiusX="6"
-                                       RadiusY="6"
-                                       Fill="#202040" />
-                            <TextBlock Text="HYPERPC PRO"
-                                       Margin="0,10,0,2"
-                                       Foreground="White"
-                                       FontWeight="Bold"
-                                       FontSize="14" />
-                            <TextBlock Text="RTX 4070 SUPER • i7 • 32 ГБ"
-                                       Foreground="#AAAAAA"
-                                       FontSize="12"
-                                       TextWrapping="Wrap" />
-                            <TextBlock Text="от 149 990 ₽"
-                                       Margin="0,6,0,8"
-                                       Foreground="#FF4B1F"
-                                       FontSize="14"
-                                       FontWeight="Bold" />
-                            <Button Content="Купить"
-                                    Padding="10,4"
-                                    Background="#FF4B1F"
-                                    Foreground="White"
-                                    BorderBrush="Transparent"
-                                    Cursor="Hand" />
-                        </StackPanel>
-                    </Border>
-
-                    <!-- Card 3 -->
-                    <Border Margin="5"
-                            Padding="10"
-                            CornerRadius="8"
-                            Background="#151528"
-                            BorderBrush="#222"
-                            BorderThickness="1">
-                        <StackPanel>
-                            <Rectangle Height="100"
-                                       RadiusX="6"
-                                       RadiusY="6"
-                                       Fill="#202040" />
-                            <TextBlock Text="HYPERPC ULTRA"
-                                       Margin="0,10,0,2"
-                                       Foreground="White"
-                                       FontWeight="Bold"
-                                       FontSize="14" />
-                            <TextBlock Text="RTX 4090 • i9 • 64 ГБ"
-                                       Foreground="#AAAAAA"
-                                       FontSize="12"
-                                       TextWrapping="Wrap" />
-                            <TextBlock Text="от 299 990 ₽"
-                                       Margin="0,6,0,8"
-                                       Foreground="#FF4B1F"
-                                       FontSize="14"
-                                       FontWeight="Bold" />
-                            <Button Content="Купить"
-                                    Padding="10,4"
-                                    Background="#FF4B1F"
-                                    Foreground="White"
-                                    BorderBrush="Transparent"
-                                    Cursor="Hand" />
-                        </StackPanel>
-                    </Border>
-                </UniformGrid>
-            </StackPanel>
-        </ScrollViewer>
+        <!-- MAIN CONTENT AREA FOR PAGES -->
+        <Frame x:Name="MainFrame"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Background="#101018" />
 
         <!-- FOOTER -->
         <Border Grid.Row="2"

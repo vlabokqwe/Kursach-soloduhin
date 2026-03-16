@@ -1,0 +1,94 @@
+<Page x:Class="Kursach_soloduhin.WorkstationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Рабочие станции"
+      Background="#101018">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Background="#101018">
+        <StackPanel Margin="20,15,20,15">
+            <TextBlock Text="Профессиональные рабочие станции"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10" />
+            <TextBlock Text="Мощные системы для монтажа видео, 3D‑рендеринга, CAD и других профессиональных задач."
+                       Foreground="#CCCCCC"
+                       FontSize="14"
+                       TextWrapping="Wrap"
+                       Margin="0,0,0,20" />
+
+            <StackPanel>
+                <Border Margin="0,0,0,8"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC WORKSTATION BASE"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Ryzen 7 • 32 ГБ • RTX 4060 • SSD 1 ТБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="Оптимально для фото‑обработки и лёгкого монтажа FullHD‑видео."
+                                   Foreground="#BBBBBB"
+                                   FontSize="12"
+                                   TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="0,0,0,8"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC WORKSTATION PRO"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Ryzen 9 • 64 ГБ • RTX 4070 Ti • SSD 2 ТБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="Для 4K‑монтажа, работы с тяжелыми проектами и многозадачности."
+                                   Foreground="#BBBBBB"
+                                   FontSize="12"
+                                   TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="0,0,0,8"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC WORKSTATION RENDER"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Threadripper • 128 ГБ • RTX 4090 • SSD 4 ТБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="Максимальная скорость рендеринга и симуляций для студий и продакшена."
+                                   Foreground="#BBBBBB"
+                                   FontSize="12"
+                                   TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+

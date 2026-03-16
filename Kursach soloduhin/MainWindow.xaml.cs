@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +23,27 @@ namespace Kursach_soloduhin
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new GamingPage());
+        }
+
+        private void ReadyPcButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ReadyPcPage());
+        }
+
+        private void GamingButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new GamingPage());
+        }
+
+        private void WorkstationButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new WorkstationPage());
+        }
+
+        private void AccessoriesButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AccessoriesPage());
         }
     }
 }

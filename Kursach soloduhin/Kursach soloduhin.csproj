@@ -59,6 +59,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\AccessoriesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\GamingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ReadyPcPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\WorkstationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -66,6 +82,18 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pages\AccessoriesPage.xaml.cs">
+      <DependentUpon>AccessoriesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GamingPage.xaml.cs">
+      <DependentUpon>GamingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReadyPcPage.xaml.cs">
+      <DependentUpon>ReadyPcPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WorkstationPage.xaml.cs">
+      <DependentUpon>WorkstationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

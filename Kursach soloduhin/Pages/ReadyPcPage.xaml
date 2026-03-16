@@ -1,0 +1,116 @@
+<Page x:Class="Kursach_soloduhin.ReadyPcPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Готовые ПК"
+      Background="#101018">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Background="#101018">
+        <StackPanel Margin="20,15,20,15">
+            <TextBlock Text="Готовые ПК для любых задач"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10" />
+            <TextBlock Text="Подборка универсальных систем, которые подойдут и для игр, и для работы. Все конфигурации собраны и протестированы."
+                       Foreground="#CCCCCC"
+                       FontSize="14"
+                       TextWrapping="Wrap"
+                       Margin="0,0,0,20" />
+
+            <UniformGrid Columns="3">
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC OFFICE+"
+                                   Margin="0,0,0,4"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="i3 / 8 ГБ / SSD 512 ГБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12" />
+                        <TextBlock Text="от 49 990 ₽"
+                                   Margin="0,6,0,8"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                        <Button Content="Подробнее"
+                                Padding="10,4"
+                                Background="#FF4B1F"
+                                Foreground="White"
+                                BorderBrush="Transparent"
+                                Cursor="Hand" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC HOME"
+                                   Margin="0,0,0,4"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Ryzen 5 / 16 ГБ / SSD 1 ТБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12" />
+                        <TextBlock Text="от 79 990 ₽"
+                                   Margin="0,6,0,8"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                        <Button Content="Подробнее"
+                                Padding="10,4"
+                                Background="#FF4B1F"
+                                Foreground="White"
+                                BorderBrush="Transparent"
+                                Cursor="Hand" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="HYPERPC FAMILY"
+                                   Margin="0,0,0,4"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="i5 / 16 ГБ / SSD 512 ГБ + HDD 1 ТБ"
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   TextWrapping="Wrap" />
+                        <TextBlock Text="от 89 990 ₽"
+                                   Margin="0,6,0,8"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                        <Button Content="Подробнее"
+                                Padding="10,4"
+                                Background="#FF4B1F"
+                                Foreground="White"
+                                BorderBrush="Transparent"
+                                Cursor="Hand" />
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+

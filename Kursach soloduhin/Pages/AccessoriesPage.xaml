@@ -1,0 +1,97 @@
+<Page x:Class="Kursach_soloduhin.AccessoriesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Аксессуары"
+      Background="#101018">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Background="#101018">
+        <StackPanel Margin="20,15,20,15">
+            <TextBlock Text="Аксессуары для вашего ПК"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10" />
+            <TextBlock Text="Клавиатуры, мыши, гарнитуры и другая периферия в едином стиле HYPERPC."
+                       Foreground="#CCCCCC"
+                       FontSize="14"
+                       TextWrapping="Wrap"
+                       Margin="0,0,0,20" />
+
+            <UniformGrid Columns="3">
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Игровая клавиатура HYPERKEY"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Механические переключатели, RGB‑подсветка."
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   TextWrapping="Wrap"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="5 990 ₽"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Игровая мышь HYPERCLICK"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="16 000 DPI, настраиваемые профили."
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   TextWrapping="Wrap"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="3 490 ₽"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+
+                <Border Margin="5"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#151528"
+                        BorderBrush="#222"
+                        BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Гарнитура HYPERSOUND"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="14" />
+                        <TextBlock Text="Объёмный звук 7.1 и шумоподавление микрофона."
+                                   Foreground="#AAAAAA"
+                                   FontSize="12"
+                                   TextWrapping="Wrap"
+                                   Margin="0,4,0,4" />
+                        <TextBlock Text="6 990 ₽"
+                                   Foreground="#FF4B1F"
+                                   FontSize="14"
+                                   FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+
