@@ -10,15 +10,10 @@
         Background="#101018">
     <Grid>
         <Grid.RowDefinitions>
-            <!-- Header -->
             <RowDefinition Height="70" />
-            <!-- Main scrollable content -->
             <RowDefinition Height="*" />
-            <!-- Footer -->
             <RowDefinition Height="50" />
         </Grid.RowDefinitions>
-
-        <!-- HEADER -->
         <Border Grid.Row="0" Background="#141428" Padding="20,0">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -26,8 +21,6 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-
-                <!-- Logo / Title -->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Rectangle Width="28" Height="28" RadiusX="4" RadiusY="4"
                                Fill="#FF4B1F">
@@ -35,15 +28,13 @@
                             <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" />
                         </Rectangle.Effect>
                     </Rectangle>
-                    <TextBlock Text="HYPERPC STORE"
+                    <TextBlock Text="PC STORE"
                                Margin="10,0,0,0"
                                VerticalAlignment="Center"
                                FontSize="18"
                                FontWeight="Bold"
                                Foreground="White" />
                 </StackPanel>
-
-                <!-- Nav buttons -->
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal"
                             HorizontalAlignment="Center"
@@ -91,8 +82,6 @@
                             Cursor="Hand"
                             Click="AccessoriesButton_Click" />
                 </StackPanel>
-
-                <!-- Auth buttons -->
                 <StackPanel Grid.Column="2"
                             Orientation="Horizontal"
                             VerticalAlignment="Center">
@@ -118,14 +107,10 @@
                 </StackPanel>
             </Grid>
         </Border>
-
-        <!-- MAIN CONTENT AREA FOR PAGES -->
         <Frame x:Name="MainFrame"
                Grid.Row="1"
                NavigationUIVisibility="Hidden"
                Background="#101018" />
-
-        <!-- FOOTER -->
         <Border Grid.Row="2"
                 Background="#141428"
                 Padding="20,0">
@@ -135,7 +120,7 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="© 2026 HYPERPC STORE • Готовые игровые ПК"
+                <TextBlock Text="© 2026 PC STORE • Готовые игровые ПК"
                            VerticalAlignment="Center"
                            Foreground="#888"
                            FontSize="12" />
