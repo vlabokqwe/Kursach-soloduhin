@@ -29,7 +29,7 @@
                         BorderBrush="#222"
                         BorderThickness="1">
                     <StackPanel>
-                        <TextBlock Text="HYPERPC OFFICE+"
+                        <TextBlock Text="PC OFFICE+"
                                    Margin="0,0,0,4"
                                    Foreground="White"
                                    FontWeight="Bold"
@@ -58,7 +58,7 @@
                         BorderBrush="#222"
                         BorderThickness="1">
                     <StackPanel>
-                        <TextBlock Text="HYPERPC HOME"
+                        <TextBlock Text="PC HOME"
                                    Margin="0,0,0,4"
                                    Foreground="White"
                                    FontWeight="Bold"
@@ -87,7 +87,7 @@
                         BorderBrush="#222"
                         BorderThickness="1">
                     <StackPanel>
-                        <TextBlock Text="HYPERPC FAMILY"
+                        <TextBlock Text="PC FAMILY"
                                    Margin="0,0,0,4"
                                    Foreground="White"
                                    FontWeight="Bold"

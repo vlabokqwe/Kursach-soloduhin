@@ -10,8 +10,6 @@
                   HorizontalScrollBarVisibility="Disabled"
                   Background="#101018">
         <StackPanel Margin="20,15,20,15">
-
-            <!-- HERO BANNER -->
             <Border CornerRadius="10"
                     Padding="20"
                     Background="#181830">
@@ -20,8 +18,6 @@
                         <ColumnDefinition Width="2*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-
-                    <!-- Text part -->
                     <StackPanel VerticalAlignment="Center" Margin="0,0,20,0">
                         <TextBlock Text="Готовые игровые ПК"
                                    Foreground="White"
@@ -49,8 +45,6 @@
                                     Cursor="Hand" />
                         </StackPanel>
                     </StackPanel>
-
-                    <!-- Image placeholder / banner box -->
                     <Border Grid.Column="1"
                             CornerRadius="8"
                             Background="#202040"
@@ -67,17 +61,12 @@
                     </Border>
                 </Grid>
             </Border>
-
-            <!-- SECTION TITLE -->
             <TextBlock Text="Популярные игровые сборки"
                        Margin="0,20,0,10"
                        Foreground="White"
                        FontSize="20"
                        FontWeight="SemiBold" />
-
-            <!-- PRODUCT CARDS -->
             <UniformGrid Columns="3" Margin="0,0,0,10">
-                <!-- Card 1 -->
                 <Border Margin="5"
                         Padding="10"
                         CornerRadius="8"
@@ -89,7 +78,7 @@
                                    RadiusX="6"
                                    RadiusY="6"
                                    Fill="#202040" />
-                        <TextBlock Text="HYPERPC GAMER"
+                        <TextBlock Text="PC GAMER"
                                    Margin="0,10,0,2"
                                    Foreground="White"
                                    FontWeight="Bold"
@@ -111,8 +100,6 @@
                                 Cursor="Hand" />
                     </StackPanel>
                 </Border>
-
-                <!-- Card 2 -->
                 <Border Margin="5"
                         Padding="10"
                         CornerRadius="8"
@@ -124,7 +111,7 @@
                                    RadiusX="6"
                                    RadiusY="6"
                                    Fill="#202040" />
-                        <TextBlock Text="HYPERPC PRO"
+                        <TextBlock Text="PC PRO"
                                    Margin="0,10,0,2"
                                    Foreground="White"
                                    FontWeight="Bold"
@@ -146,8 +133,6 @@
                                 Cursor="Hand" />
                     </StackPanel>
                 </Border>
-
-                <!-- Card 3 -->
                 <Border Margin="5"
                         Padding="10"
                         CornerRadius="8"
@@ -159,7 +144,7 @@
                                    RadiusX="6"
                                    RadiusY="6"
                                    Fill="#202040" />
-                        <TextBlock Text="HYPERPC ULTRA"
+                        <TextBlock Text="PC ULTRA"
                                    Margin="0,10,0,2"
                                    Foreground="White"
                                    FontWeight="Bold"
