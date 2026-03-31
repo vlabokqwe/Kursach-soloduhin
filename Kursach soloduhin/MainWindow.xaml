@@ -10,9 +10,9 @@
         Background="#101018">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70" />
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Border Grid.Row="0" Background="#141428" Padding="20,0">
             <Grid>
@@ -22,119 +22,42 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Rectangle Width="28" Height="28" RadiusX="4" RadiusY="4"
-                               Fill="#FF4B1F">
+                    <Rectangle Width="28" Height="28" RadiusX="4" RadiusY="4" Fill="#FF4B1F">
                         <Rectangle.Effect>
                             <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" />
                         </Rectangle.Effect>
                     </Rectangle>
-                    <TextBlock Text="PC STORE"
-                               Margin="10,0,0,0"
-                               VerticalAlignment="Center"
-                               FontSize="18"
-                               FontWeight="Bold"
-                               Foreground="White" />
+                    <TextBlock Text="PC STORE" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" />
                 </StackPanel>
-                <StackPanel Grid.Column="1"
-                            Orientation="Horizontal"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Margin="20,0,20,0">
-                    <Button x:Name="ReadyPcButton"
-                            Content="Готовые ПК"
-                            Margin="5,0"
-                            Padding="16,4"
-                            Background="Transparent"
-                            Foreground="White"
-                            BorderBrush="Transparent"
-                            FontSize="14"
-                            Cursor="Hand"
-                            Click="ReadyPcButton_Click" />
-                    <Button x:Name="GamingButton"
-                            Content="Игровые"
-                            Margin="5,0"
-                            Padding="16,4"
-                            Background="Transparent"
-                            Foreground="#FF6851"
-                            BorderBrush="Transparent"
-                            FontSize="14"
-                            FontWeight="Bold"
-                            Cursor="Hand"
-                            Click="GamingButton_Click" />
-                    <Button x:Name="WorkstationButton"
-                            Content="Рабочие станции"
-                            Margin="5,0"
-                            Padding="16,4"
-                            Background="Transparent"
-                            Foreground="White"
-                            BorderBrush="Transparent"
-                            FontSize="14"
-                            Cursor="Hand"
-                            Click="WorkstationButton_Click" />
-                    <Button x:Name="AccessoriesButton"
-                            Content="Аксессуары"
-                            Margin="5,0"
-                            Padding="16,4"
-                            Background="Transparent"
-                            Foreground="White"
-                            BorderBrush="Transparent"
-                            FontSize="14"
-                            Cursor="Hand"
-                            Click="AccessoriesButton_Click" />
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,20,0">
+                    <Button x:Name="ReadyPcButton" Content="Готовые ПК" Margin="5,0" Padding="16,4" Background="Transparent" Foreground="White" BorderBrush="Transparent" FontSize="14" Cursor="Hand" Click="ReadyPcButton_Click" />
+                    <Button x:Name="GamingButton" Content="Игровые" Margin="5,0" Padding="16,4" Background="Transparent" Foreground="#FF6851" BorderBrush="Transparent" FontSize="14" FontWeight="Bold" Cursor="Hand" Click="GamingButton_Click" />
+                    <Button x:Name="WorkstationButton" Content="Рабочие станции" Margin="5,0" Padding="16,4" Background="Transparent" Foreground="White" BorderBrush="Transparent" FontSize="14" Cursor="Hand" Click="WorkstationButton_Click" />
+                    <Button x:Name="AccessoriesButton" Content="Аксессуары" Margin="5,0" Padding="16,4" Background="Transparent" Foreground="White" BorderBrush="Transparent" FontSize="14" Cursor="Hand" Click="AccessoriesButton_Click" />
                 </StackPanel>
-                <StackPanel Grid.Column="2"
-                            Orientation="Horizontal"
-                            VerticalAlignment="Center">
-                    <Button Content="Войти"
-                            Margin="0,0,8,0"
-                            Padding="12,4"
-                            Background="Transparent"
-                            BorderBrush="#FF4B1F"
-                            Foreground="White"
-                            Cursor="Hand" />
-                    <Button Content="Регистрация"
-                            Padding="14,4"
-                            Background="#FF4B1F"
-                            Foreground="White"
-                            BorderBrush="Transparent"
-                            Cursor="Hand">
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Content="Войти" Margin="0,0,8,0" Padding="12,4" Background="Transparent" BorderBrush="#FF4B1F" Foreground="White" Cursor="Hand" />
+                    <Button Content="Регистрация" Padding="14,4" Background="#FF4B1F" Foreground="White" BorderBrush="Transparent" Cursor="Hand">
                         <Button.Effect>
-                            <DropShadowEffect Color="Black"
-                                              BlurRadius="15"
-                                              ShadowDepth="2" />
+                            <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="2" />
                         </Button.Effect>
                     </Button>
                 </StackPanel>
             </Grid>
         </Border>
-        <Frame x:Name="MainFrame"
-               Grid.Row="1"
-               NavigationUIVisibility="Hidden"
-               Background="#101018" />
-        <Border Grid.Row="2"
-                Background="#141428"
-                Padding="20,0">
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Background="#101018" />
+        <Border Grid.Row="2" Background="#141428" Padding="20,0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="© 2026 PC STORE • Готовые игровые ПК"
-                           VerticalAlignment="Center"
-                           Foreground="#888"
-                           FontSize="12" />
+                <TextBlock Text="© 2026 PC STORE • Готовые игровые ПК" VerticalAlignment="Center" Foreground="#888" FontSize="12" />
 
-                <StackPanel Grid.Column="1"
-                            Orientation="Horizontal"
-                            VerticalAlignment="Center">
-                    <TextBlock Text="Тел: +7 (900) 000-00-00"
-                               Foreground="#888"
-                               FontSize="12"
-                               Margin="0,0,15,0" />
-                    <TextBlock Text="Поддержка: support@hyperpc.local"
-                               Foreground="#888"
-                               FontSize="12" />
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Тел: +7 (900) 000-00-00" Foreground="#888" FontSize="12" Margin="0,0,15,0" />
+                    <TextBlock Text="Поддержка: support@hyperpc.local" Foreground="#888" FontSize="12" />
                 </StackPanel>
             </Grid>
         </Border>
